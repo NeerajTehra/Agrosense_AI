@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">AgroSense AI</string>
+    <string name="app_tagline">Smart Crop Disease &amp; Farm Decision Support</string>
+
+    <!-- Auth Labels -->
+    <string name="login_title">Welcome Back</string>
+    <string name="login_subtitle">Sign in to continue to your farm intelligence dashboard</string>
+    <string name="register_title">Create Account</string>
+    <string name="register_subtitle">Create your AgroSense AI account</string>
+    <string name="forgot_password_title">Reset Password</string>
+    <string name="forgot_password_subtitle">Enter your email to reset your account password</string>
+
+    <!-- Dashboard Previews -->
+    <string name="preview_crop_health">Crop Health</string>
+    <string name="preview_disease_scanner">Disease Scanner</string>
+    <string name="preview_field_analytics">Field Analytics</string>
+    <string name="preview_farm_risk">Farm Risk</string>
+    <string name="smart_farming_tag">Smart Farming • AI-Assisted Decisions</string>
+
+    <!-- Splash Screen -->
+    <string name="splash_tagline">Intelligent Crop &amp; Farm Decision Support</string>
+    <string name="splash_initializing">Initializing AgroSense AI…</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">Smarter Farming Starts Here</string>
+    <string name="onboarding_subtitle_1">Use intelligent crop insights to understand field health and make better farming decisions.</string>
+    <string name="onboarding_title_2">AI Crop Disease Detection</string>
+    <string name="onboarding_subtitle_2">Scan crop leaves and identify potential diseases with AI-powered image analysis, confidence scoring and severity estimation.</string>
+    <string name="onboarding_title_3">Understand Your Farm</string>
+    <string name="onboarding_subtitle_3">Track fields, crops, environmental conditions, disease history and farm health from one intelligent dashboard.</string>
+    <string name="onboarding_title_4">Turn Insights Into Action</string>
+    <string name="onboarding_subtitle_4">Get treatment guidance, risk alerts and data-driven recommendations for healthier crops.</string>
+    <string name="btn_skip">Skip</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_get_started">Get Started</string>
+
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="full_name_hint">Full Name</string>
+    <string name="phone_hint">Phone Number</string>
+    <string name="role_hint">User Role</string>
+
+    <string name="btn_login">Login</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_reset">Reset Password</string>
+
+    <string name="no_account">Don\'t have an account? Register</string>
+    <string name="have_account">Already have an account? Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+
+    <!-- Validations -->
+    <string name="err_empty">Field cannot be empty</string>
+    <string name="err_invalid_email">Invalid email format</string>
+    <string name="err_password_short">Password must be at least 6 characters</string>
+    <string name="err_password_mismatch">Passwords do not match</string>
+    <string name="err_duplicate_email">Email already registered</string>
+    <string name="err_invalid_credentials">Invalid email or password</string>
+
+    <!-- Profile & Settings -->
+    <string name="profile_title">Profile</string>
+    <string name="settings_title">Settings</string>
+    <string name="btn_logout">Logout</string>
+    <string name="btn_edit">Edit Profile</string>
+    <string name="version">Version 1.0</string>
+</resources>

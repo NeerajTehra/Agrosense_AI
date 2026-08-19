@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Professional AgriTech Palette - Light -->
+    <color name="leaf_green">#2E7D32</color>
+    <color name="leaf_green_dark">#1B5E20</color>
+    <color name="leaf_green_light">#E8F5E9</color>
+
+    <color name="earth_brown">#5D4037</color>
+    <color name="earth_brown_dark">#3E2723</color>
+
+    <color name="text_primary">#1A1C1E</color>
+    <color name="text_secondary">#44474E</color>
+    <color name="text_hint">#74777F</color>
+
+    <color name="background_light">#F8F9FA</color>
+    <color name="background_onboarding">#F7FAF7</color>
+    <color name="surface_light">#FFFFFF</color>
+    <color name="input_border">#C4C6CF</color>
+    <color name="error_red">#BA1A1A</color>
+
+    <color name="indicator_inactive">#D1D5DB</color>
+</resources>

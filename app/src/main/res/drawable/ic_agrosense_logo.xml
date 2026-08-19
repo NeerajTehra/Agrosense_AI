@@ -1,0 +1,24 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Outer geometric shield/leaf shape -->
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M12,2L4.5,20.29L5.21,21L12,18L18.79,21L19.5,20.29L12,2Z"
+        android:alpha="0.2"/>
+    <!-- Main leaf inner shape -->
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M12,2L12,18L5.21,21L12,2Z"
+        android:alpha="0.8"/>
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M12,2L19.5,20.29L12,18L12,2Z"/>
+    <!-- AI node/circuit lines (subtle) -->
+    <path
+        android:strokeColor="@color/leaf_green_light"
+        android:strokeWidth="0.5"
+        android:pathData="M12,6L12,14M9,10L15,10M12,6A1,1 0,1 0,12 8A1,1 0,1 0,12 6M9,10A1,1 0,1 0,9 12A1,1 0,1 0,9 10M15,10A1,1 0,1 0,15 12A1,1 0,1 0,15 10"/>
+</vector>
