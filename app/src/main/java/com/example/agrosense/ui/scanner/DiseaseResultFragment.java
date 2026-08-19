@@ -122,9 +122,9 @@ public class DiseaseResultFragment extends Fragment {
             Disease disease = db.diseaseDao().getDiseaseByName(diseaseName);
             requireActivity().runOnUiThread(() -> {
                 if (disease != null) {
-                    tvSymptoms.setText(disease.symptoms);
-                    tvTreatment.setText(disease.treatmentRecommendation);
-                    tvPrevention.setText(disease.prevention);
+                    tvSymptoms.setText(disease.getSymptoms());
+                    tvTreatment.setText(disease.getTreatment());
+                    tvPrevention.setText(disease.getPrevention());
                 } else if (isHealthy) {
                     tvSymptoms.setText("No negative symptoms observed.");
                     tvTreatment.setText("Continue regular monitoring and maintenance.");
@@ -144,7 +144,7 @@ public class DiseaseResultFragment extends Fragment {
             
             Prediction p = new Prediction();
             p.cropId = cropId;
-            p.diseaseId = disease != null ? disease.id : null;
+            p.diseaseId = disease != null ? disease.getId() : null;
             p.confidence = confidence;
             p.severity = severity;
             p.isHealthy = isHealthy;

@@ -77,7 +77,7 @@ public class PredictionDetailsFragment extends Fragment {
                     tvSeverity.setText(p.severity);
                     tvCause.setText(p.cause != null ? p.cause : "N/A");
                     
-                    String displayName = p.isHealthy ? "Healthy Crop" : (d != null ? d.name : "Infection Detected");
+                    String displayName = p.isHealthy ? "Healthy Crop" : (d != null ? d.getName() : "Infection Detected");
                     if (p.detectedPlant != null) {
                         displayName += " (" + p.detectedPlant + ")";
                     }
@@ -87,8 +87,8 @@ public class PredictionDetailsFragment extends Fragment {
                         tvSymptoms.setText("No symptoms detected.");
                         tvTreatment.setText("Regular maintenance.");
                     } else if (d != null) {
-                        tvSymptoms.setText(d.symptoms);
-                        tvTreatment.setText(d.treatmentRecommendation);
+                        tvSymptoms.setText(d.getSymptoms());
+                        tvTreatment.setText(d.getTreatment());
                     } else {
                         tvSymptoms.setText("Information unavailable.");
                         tvTreatment.setText("Consult an expert.");

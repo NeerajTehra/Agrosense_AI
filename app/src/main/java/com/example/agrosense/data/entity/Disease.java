@@ -1,32 +1,49 @@
 package com.example.agrosense.data.entity;
 
-import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = "diseases")
 public class Disease {
     @PrimaryKey(autoGenerate = true)
-    public long id;
+    private long id;
 
-    @ColumnInfo(name = "name")
-    public String name;
+    private String name;
+    private String cropApplicability;
+    private String symptoms;
+    private String cause;
+    private String treatment;
+    private String prevention;
 
-    @ColumnInfo(name = "description")
-    public String description;
+    public Disease() {}
 
-    @ColumnInfo(name = "symptoms")
-    public String symptoms;
+    public Disease(String name, String cropApplicability, String symptoms, String cause, String treatment, String prevention) {
+        this.name = name;
+        this.cropApplicability = cropApplicability;
+        this.symptoms = symptoms;
+        this.cause = cause;
+        this.treatment = treatment;
+        this.prevention = prevention;
+    }
 
-    @ColumnInfo(name = "causative_agent")
-    public String causativeAgent;
+    public long getId() { return id; }
+    public void setId(long id) { this.id = id; }
 
-    @ColumnInfo(name = "treatment_recommendation")
-    public String treatmentRecommendation;
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
 
-    @ColumnInfo(name = "prevention")
-    public String prevention;
+    public String getCropApplicability() { return cropApplicability; }
+    public void setCropApplicability(String cropApplicability) { this.cropApplicability = cropApplicability; }
 
-    @ColumnInfo(name = "crop_applicability")
-    public String cropApplicability; // e.g., "Tomato, Potato"
+    public String getSymptoms() { return symptoms; }
+    public void setSymptoms(String symptoms) { this.symptoms = symptoms; }
+
+    public String getCause() { return cause; }
+    public void setCause(String cause) { this.cause = cause; }
+
+    public String getTreatment() { return treatment; }
+    public void setTreatment(String treatment) { this.treatment = treatment; }
+
+    public String getPrevention() { return prevention; }
+    public void setPrevention(String prevention) { this.prevention = prevention; }
 }
